@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="webservices.Portal.weaver.com.cn" xmlns:soapenc11="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="webservices.Portal.weaver.com.cn" xmlns:soap12="http://www.w3.org/2003/05/soap-envelope" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap11="http://schemas.xmlsoap.org/soap/envelope/" xmlns:soapenc12="http://www.w3.org/2003/05/soap-encoding">
+  <wsdl:types>
+<xsd:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="webservices.Portal.weaver.com.cn" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<xsd:element name="getOneWorkflowInfo">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in1" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="getOneWorkflowInfoResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="getPortalDetailInfo">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in1" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="getPortalDetailInfoResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="getAllWorkflow">
+<xsd:complexType/>
+</xsd:element>
+<xsd:element name="getAllWorkflowResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="getPortalMAinInfo">
+<xsd:complexType/>
+</xsd:element>
+<xsd:element name="getPortalMAinInfoResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="getUserWorkflow">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="getUserWorkflowResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="getUserId">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="getUserIdResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="changePassword">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in1" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="changePasswordResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+</xsd:schema>
+
+  </wsdl:types>
+  <wsdl:message name="getPortalDetailInfoRequest">
+    <wsdl:part name="parameters" element="tns:getPortalDetailInfo">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="changePasswordRequest">
+    <wsdl:part name="parameters" element="tns:changePassword">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getUserIdRequest">
+    <wsdl:part name="parameters" element="tns:getUserId">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getPortalMAinInfoResponse">
+    <wsdl:part name="parameters" element="tns:getPortalMAinInfoResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getOneWorkflowInfoResponse">
+    <wsdl:part name="parameters" element="tns:getOneWorkflowInfoResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getAllWorkflowResponse">
+    <wsdl:part name="parameters" element="tns:getAllWorkflowResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getOneWorkflowInfoRequest">
+    <wsdl:part name="parameters" element="tns:getOneWorkflowInfo">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="changePasswordResponse">
+    <wsdl:part name="parameters" element="tns:changePasswordResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getUserIdResponse">
+    <wsdl:part name="parameters" element="tns:getUserIdResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getAllWorkflowRequest">
+    <wsdl:part name="parameters" element="tns:getAllWorkflow">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getPortalMAinInfoRequest">
+    <wsdl:part name="parameters" element="tns:getPortalMAinInfo">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getPortalDetailInfoResponse">
+    <wsdl:part name="parameters" element="tns:getPortalDetailInfoResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getUserWorkflowResponse">
+    <wsdl:part name="parameters" element="tns:getUserWorkflowResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getUserWorkflowRequest">
+    <wsdl:part name="parameters" element="tns:getUserWorkflow">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="PortalServicePortType">
+    <wsdl:operation name="getOneWorkflowInfo">
+      <wsdl:input name="getOneWorkflowInfoRequest" message="tns:getOneWorkflowInfoRequest">
+    </wsdl:input>
+      <wsdl:output name="getOneWorkflowInfoResponse" message="tns:getOneWorkflowInfoResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getPortalDetailInfo">
+      <wsdl:input name="getPortalDetailInfoRequest" message="tns:getPortalDetailInfoRequest">
+    </wsdl:input>
+      <wsdl:output name="getPortalDetailInfoResponse" message="tns:getPortalDetailInfoResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllWorkflow">
+      <wsdl:input name="getAllWorkflowRequest" message="tns:getAllWorkflowRequest">
+    </wsdl:input>
+      <wsdl:output name="getAllWorkflowResponse" message="tns:getAllWorkflowResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getPortalMAinInfo">
+      <wsdl:input name="getPortalMAinInfoRequest" message="tns:getPortalMAinInfoRequest">
+    </wsdl:input>
+      <wsdl:output name="getPortalMAinInfoResponse" message="tns:getPortalMAinInfoResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUserWorkflow">
+      <wsdl:input name="getUserWorkflowRequest" message="tns:getUserWorkflowRequest">
+    </wsdl:input>
+      <wsdl:output name="getUserWorkflowResponse" message="tns:getUserWorkflowResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUserId">
+      <wsdl:input name="getUserIdRequest" message="tns:getUserIdRequest">
+    </wsdl:input>
+      <wsdl:output name="getUserIdResponse" message="tns:getUserIdResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="changePassword">
+      <wsdl:input name="changePasswordRequest" message="tns:changePasswordRequest">
+    </wsdl:input>
+      <wsdl:output name="changePasswordResponse" message="tns:changePasswordResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="PortalServiceHttpBinding" type="tns:PortalServicePortType">
+    <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="getOneWorkflowInfo">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="getOneWorkflowInfoRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getOneWorkflowInfoResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getPortalDetailInfo">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="getPortalDetailInfoRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getPortalDetailInfoResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllWorkflow">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="getAllWorkflowRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getAllWorkflowResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getPortalMAinInfo">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="getPortalMAinInfoRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getPortalMAinInfoResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUserWorkflow">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="getUserWorkflowRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getUserWorkflowResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUserId">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="getUserIdRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getUserIdResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="changePassword">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="changePasswordRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="changePasswordResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PortalService">
+    <wsdl:port name="PortalServiceHttpPort" binding="tns:PortalServiceHttpBinding">
+      <wsdlsoap:address location="http://39.107.83.4:956/services/PortalService"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

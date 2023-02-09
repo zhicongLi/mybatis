@@ -1,7 +1,6 @@
 package test;
 
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Map;
 
 public class Test13 {
@@ -21,10 +20,5 @@ public class Test13 {
                 System.out.println(m.getKey());
             }
         }
-    }
-
-    public static boolean isPalindrome(int x){
-        StringBuffer sb = new StringBuffer(String.valueOf(x));
-        return sb.reverse().toString().equals(String.valueOf(x));
     }
 }

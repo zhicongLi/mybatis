@@ -13,17 +13,17 @@ public class TestCon {
             Statement sta = con.createStatement();
 
             //sql
-            //String sql = "select * from pi_user where name = ''or 1=1#'";
-            String sql = "insert into pi_user(id,name,pass) values ('5','钱七','123')";
+            String sql = "select * from pi_user where name = ''or 1=1#'";
+            //String sql = "insert into pi_user(id,name,pass) values ('6','武六','126')";
             //String sql = "select * from pi_user where name = '张三'";
-            //String sql = "select * from pi_user where name = ?";
+            //String sql = "select * from pi_user";
 
             /*PreparedStatement preparedStatement = con.prepareStatement(sql);
             preparedStatement.setString(1,"'");*/
             //执行期执行sql 获取结果
             ResultSet res = sta.executeQuery(sql);
             while(res.next()){
-                System.out.println("id=" + res.getString("id") + "name" + res.getString("name") + "budget" + res.getString("budget"));
+                System.out.println("id=" + res.getString("id") + "name=" + res.getString("name") + "budget=" + res.getString("budget"));
             }
             res.close();
             sta.close();

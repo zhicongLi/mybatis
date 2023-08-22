@@ -1,5 +1,7 @@
 package test;
 
+import com.alibaba.fastjson.JSONArray;
+
 public class Demo01 {
 
     public static void main(String[] args) {
@@ -18,8 +20,8 @@ public class Demo01 {
     class Cat extends Animal{
         public void run(){
             System.out.println("我不会飞");
-            this.run();
-            super.run();
+            //this.run();
+            //super.run();
         }
 
     }

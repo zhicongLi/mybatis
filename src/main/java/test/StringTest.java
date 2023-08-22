@@ -9,5 +9,9 @@ public class StringTest {
 
         System.out.println(str.getBytes("UTF-8"));
         System.out.println(str.lastIndexOf("w"));
+
+        String s = "abc";
+        System.out.println(s.substring(0,3));
+
     }
 }

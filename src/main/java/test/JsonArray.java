@@ -1,10 +1,12 @@
 package test;
 
 import com.alibaba.fastjson.JSONArray;
+import com.alibaba.fastjson.JSONObject;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.List;
+import java.util.Map;
 
 public class JsonArray {
 
@@ -59,7 +61,12 @@ public class JsonArray {
                 ":\"同意\",\"zygkMan\":\"王铭佳\",\"zygkTime\":\"2022-11-30\",\"_id\":1,\"_uid\":1}]";*/
 
         String s = "[{\"submitMonth\":\"2022-12-01\"}]";
+        String s1 = "{\"submitMonth\":\"2022-12-01\"}";
         List<WzPlan> list = JSONArray.parseArray(s,WzPlan.class);
+        WzPlan wzPlan = JSONObject.parseObject(s1,WzPlan.class);
+        Map<String,Object> map = JSONObject.parseObject(s1,Map.class);
+        System.out.println(wzPlan.getSubmitMonth());
+        System.out.println(map.get("submitMonth"));
 
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM");
         simpleDateFormat.parse("2022-12");

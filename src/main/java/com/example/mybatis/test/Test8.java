@@ -46,6 +46,7 @@ class test11{
 
         thread.start();
         thread1.start();
+        System.out.println("aaaa");
 
     }
 }

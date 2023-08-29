@@ -21,6 +21,7 @@ public class ArraysTest {
         System.out.println(sb);
         int i = Integer.parseInt(sb.toString()) + 1;
         char[] c = String.valueOf(i).toCharArray();
+        System.out.println("111111");
     }
 
 }
